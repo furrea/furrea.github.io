@@ -60,21 +60,30 @@ A modern, responsive personal website built with HTML, CSS, and JavaScript, desi
 5. Choose "main" branch and "/ (root)" folder
 6. Click "Save"
 
-Your site will be available at: `https://yourusername.github.io/repository-name`
+Your site will be available at: `https://fernandaurrea.com`
 
 ## Custom Domain Setup
 
-To use your custom domain with GitHub Pages:
+Your custom domain `fernandaurrea.com` is already configured! Here's what you need to do:
 
-1. Add a `CNAME` file to your repository root with your domain name
-2. Configure your domain's DNS settings:
-   - Add a CNAME record pointing to `yourusername.github.io`
-   - Or add A records pointing to GitHub's IP addresses:
-     - 185.199.108.153
-     - 185.199.109.153
-     - 185.199.110.153
-     - 185.199.111.153
-3. Enable "Enforce HTTPS" in your repository's Pages settings
+### DNS Configuration
+Configure your domain's DNS settings with your domain provider:
+
+**Option 1: CNAME Record (Recommended)**
+- Add a CNAME record: `www` → `furrea.github.io`
+
+**Option 2: A Records**
+- Add A records pointing to GitHub's IP addresses:
+  - `185.199.108.153`
+  - `185.199.109.153`
+  - `185.199.110.153`
+  - `185.199.111.153`
+
+### GitHub Pages Settings
+1. Go to your repository Settings → Pages
+2. Under "Custom domain", enter: `fernandaurrea.com`
+3. Check "Enforce HTTPS" (this will be available after DNS propagation)
+4. The CNAME file is already included in your repository
 
 ## File Structure
 
@@ -83,6 +92,7 @@ personal-page/
 ├── index.html          # Main HTML file
 ├── styles.css          # CSS styles
 ├── script.js           # JavaScript functionality
+├── CNAME               # Custom domain configuration
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml  # GitHub Actions workflow
