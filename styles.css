@@ -238,6 +238,8 @@ a:hover {
 }
 
 .avatar {
+    object-fit: cover;
+    object-position: 47% 40%;
     width: 160px;
     height: 160px;
     border-radius: 999px;
